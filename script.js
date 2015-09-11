@@ -2,7 +2,8 @@
 // http://iamemmanouil.com/blog/electron-oauth-with-github/
 // https://github.com/ekonstantinidis/gitify
 // and https://gist.github.com/paulbbauer/2add0bdf0f4342df48ea
-// that's why you will notice the github oAuth references in the code
+// that's why you will notice the github oAuth references in the code it should be changed to nylas
+// watch out for the callback location that's the tricky part
 
 var remote = window.require('remote');
 // var ipc = window.require('ipc');
