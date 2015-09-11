@@ -19,7 +19,7 @@ function dooAuth() {
   // Your GitHub Applications Credentials
   var options = {
     client_id: '<your appid>',
-    client_secret: ',your secret>',
+    client_secret: '<your secret>',
     response_type: 'token',
     scope: 'email',
     redirect_uri: './index.html'
