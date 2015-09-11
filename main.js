@@ -26,7 +26,7 @@ app.on('ready', function() {
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
 
-  // Open the DevTools.
+  // Open the DevTools. important to see if code/token is returned
   mainWindow.openDevTools();
 
   // Emitted when the window is closed.

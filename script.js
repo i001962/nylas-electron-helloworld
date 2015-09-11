@@ -1,3 +1,9 @@
+// most of this is swiped from
+// http://iamemmanouil.com/blog/electron-oauth-with-github/
+// https://github.com/ekonstantinidis/gitify
+// and https://gist.github.com/paulbbauer/2add0bdf0f4342df48ea
+// that's why you will notice the github oAuth references in the code
+
 var remote = window.require('remote');
 // var ipc = window.require('ipc');
 var BrowserWindow = remote.require('browser-window');
@@ -11,8 +17,8 @@ function dooAuth() {
 
   // Your GitHub Applications Credentials
   var options = {
-    client_id: 'a40qiljsjkhxuokvfh63fodjk',
-    client_secret: '7fwxwoeab2ercw0tdrr5lkc8j',
+    client_id: '<your appid>',
+    client_secret: ',your secret>',
     response_type: 'token',
     scope: 'email',
     redirect_uri: './index.html'
