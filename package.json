@@ -1,11 +1,28 @@
 {
-  "name": "example1",
-  "version": "1.0.1",
-  "description": "",
+  "name": "nylas-electron-helloworld",
+  "version": "1.0.0",
+  "description": "Nylas electron app hello world",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "asar pack nylas-hello-darwin-x64/nylas-hello.app/Contents/Resources/app nylas-hello-darwin-x64/nylas-hello.app/Contents/Resources/app.asar && rm -rf nylas-hello-darwin-x64/nylas-hello.app/Contents/Resources/app",
+    "build": "electron-packager . nylas-hello --platform=darwin --arch=x64 --version=0.32.2 && cp images/ah.icns nylas-hello-darwin-x64/nylas-hello.app/Contents/Resources/atom.icns"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i001962/nylas-electron-helloworld.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^5.1.0"
+  },
+  "dependencies": {
+    "dialog": "^0.1.8",
+    "electron-gh-releases": "^1.0.1",
+    "electron-prebuilt": "^0.32.2",
+    "https": "^1.0.0",
+    "querystring": "^0.2.0"
+  }
 }
